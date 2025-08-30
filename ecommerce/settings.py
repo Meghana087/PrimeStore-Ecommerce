@@ -76,21 +76,18 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': os.environ.get('MYSQL_DATABASE'),
-#         'USER': 'root',  # or your MySQL user
-#         'PASSWORD': os.environ.get('MYSQL_ROOT_PASSWORD'),
-#         'HOST': os.environ.get('MYSQL_HOST', 'localhost'),  # set your host
-#         'PORT': '3306',
-#     }
-# }
-
-import dj_database_url
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('MYSQL_URL'))
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ.get('MYSQL_DATABASE'),
+        'USER': 'root',  # or your MySQL user
+        'PASSWORD': os.environ.get('MYSQL_ROOT_PASSWORD'),
+        'HOST': os.environ.get('MYSQL_HOST', 'localhost'),  # set your host
+        'PORT': '3306',
+    }
 }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
