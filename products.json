@@ -1,0 +1,787 @@
+[
+    {
+        "model": "eshop.products",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "name": "White Shirt3",
+            "vendor": "VendorX",
+            "product_image": "uploads/White_Shirt3.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality White_Shirt3",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 2,
+        "fields": {
+            "category": 2,
+            "name": "Lenovo Ideapad slim 3",
+            "vendor": "VendorX",
+            "product_image": "uploads/Lenovo_Ideapad_slim_3.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality Lenovo_Ideapad_slim_3",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 3,
+        "fields": {
+            "category": 2,
+            "name": "ASUS TUF Gamming",
+            "vendor": "VendorX",
+            "product_image": "uploads/ASUS_TUF_Gamming.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality ASUS_TUF_Gamming",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 4,
+        "fields": {
+            "category": 2,
+            "name": "Apple Macbook Pro 2023",
+            "vendor": "VendorX",
+            "product_image": "uploads/Apple_Macbook_Pro_2023.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality Apple_Macbook_Pro_2023",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 5,
+        "fields": {
+            "category": 1,
+            "name": "graphic-shirt-trendy-design-mockup",
+            "vendor": "VendorX",
+            "product_image": "uploads/graphic-shirt-trendy-design-mockup.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality graphic-shirt-trendy-design-mockup",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 6,
+        "fields": {
+            "category": 1,
+            "name": "Oyster Checked",
+            "vendor": "VendorX",
+            "product_image": "uploads/Oyster_Checked.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality Oyster_Checked",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 7,
+        "fields": {
+            "category": 1,
+            "name": "Light Pink Striped",
+            "vendor": "VendorX",
+            "product_image": "uploads/Light_Pink_Striped.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality Light_Pink_Striped",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 8,
+        "fields": {
+            "category": 1,
+            "name": "Run T-Shirt",
+            "vendor": "VendorX",
+            "product_image": "uploads/Run_T-Shirt.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality Run_T-Shirt",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 9,
+        "fields": {
+            "category": 3,
+            "name": "Samsung Galaxy",
+            "vendor": "VendorX",
+            "product_image": "uploads/Samsung_Galaxy.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality Samsung_Galaxy",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 10,
+        "fields": {
+            "category": 3,
+            "name": "Motorola Edge 40",
+            "vendor": "VendorX",
+            "product_image": "uploads/Motorola_Edge_40.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality Motorola_Edge_40",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 11,
+        "fields": {
+            "category": 3,
+            "name": "Apple 14 Pro",
+            "vendor": "VendorX",
+            "product_image": "uploads/Apple_14_Pro.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality Apple_14_Pro",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 12,
+        "fields": {
+            "category": 4,
+            "name": "shoe cat",
+            "vendor": "VendorX",
+            "product_image": "uploads/shoe_cat.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality shoe_cat",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 13,
+        "fields": {
+            "category": 3,
+            "name": "Mobile Redmi",
+            "vendor": "VendorX",
+            "product_image": "uploads/Mobile_Redmi.jpeg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality Mobile_Redmi",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 14,
+        "fields": {
+            "category": 1,
+            "name": "shirt1",
+            "vendor": "VendorX",
+            "product_image": "uploads/shirt1.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality shirt1",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 15,
+        "fields": {
+            "category": 1,
+            "name": "shirt2",
+            "vendor": "VendorX",
+            "product_image": "uploads/shirt2.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality shirt2",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 16,
+        "fields": {
+            "category": 1,
+            "name": "shirt3",
+            "vendor": "VendorX",
+            "product_image": "uploads/shirt3.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality shirt3",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 17,
+        "fields": {
+            "category": 1,
+            "name": "shirt4",
+            "vendor": "VendorX",
+            "product_image": "uploads/shirt4.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality shirt4",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 18,
+        "fields": {
+            "category": 1,
+            "name": "shirt5",
+            "vendor": "VendorX",
+            "product_image": "uploads/shirt5.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality shirt5",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 19,
+        "fields": {
+            "category": 1,
+            "name": "shirt6",
+            "vendor": "VendorX",
+            "product_image": "uploads/shirt6.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality shirt6",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 20,
+        "fields": {
+            "category": 1,
+            "name": "shirt7",
+            "vendor": "VendorX",
+            "product_image": "uploads/shirt7.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality shirt7",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 21,
+        "fields": {
+            "category": 1,
+            "name": "shirt8",
+            "vendor": "VendorX",
+            "product_image": "uploads/shirt8.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality shirt8",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 22,
+        "fields": {
+            "category": 2,
+            "name": "Apple_Macbook_2022.jpg",
+            "vendor": "VendorX",
+            "product_image": "uploads/Apple_Macbook_2022.jpg",
+            "quantity": 10,
+            "original_price": 2000,
+            "selling_price": 1500,
+            "description": "High quality laptop",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 23,
+        "fields": {
+            "category": 1,
+            "name": "Ash_Grey_Shirt",
+            "vendor": "VendorX",
+            "product_image": "uploads/Ash_Grey_Shirt.jpg",
+            "quantity": 10,
+            "original_price": 1200,
+            "selling_price": 1500,
+            "description": "High quality Ash_Grey_Shirt",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 24,
+        "fields": {
+            "category": 2,
+            "name": "ASUS_TUF_Gamming_F15",
+            "vendor": "VendorX",
+            "product_image": "uploads/ASUS_TUF_Gamming_F15.jpg",
+            "quantity": 10,
+            "original_price": 1200,
+            "selling_price": 1500,
+            "description": "High quality ASUS_TUF_Gamming_F15",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 25,
+        "fields": {
+            "category": 1,
+            "name": "Black_Shirt",
+            "vendor": "VendorX",
+            "product_image": "uploads/Black_Shirt.jpg",
+            "quantity": 10,
+            "original_price": 800,
+            "selling_price": 1000,
+            "description": "High quality Black_Shirt",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 26,
+        "fields": {
+            "category": 1,
+            "name": "Coffee_Striped",
+            "vendor": "VendorX",
+            "product_image": "uploads/Coffee_Striped.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality Coffee_Striped",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 27,
+        "fields": {
+            "category": 1,
+            "name": "Grass_Gingham",
+            "vendor": "VendorX",
+            "product_image": "uploads/Grass_Gingham.jpg",
+            "quantity": 10,
+            "original_price": 700,
+            "selling_price": 900,
+            "description": "High quality Grass_Gingham",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 28,
+        "fields": {
+            "category": 2,
+            "name": "Laptop",
+            "vendor": "VendorX",
+            "product_image": "uploads/Laptop.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality Laptop",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 29,
+        "fields": {
+            "category": 2,
+            "name": "Lenovo_Idea_pad_3",
+            "vendor": "VendorX",
+            "product_image": "uploads/Lenovo_Idea_pad_3.jpg",
+            "quantity": 10,
+            "original_price": 60000,
+            "selling_price": 80000,
+            "description": "High quality Lenovo_Idea_pad_3",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 30,
+        "fields": {
+            "category": 1,
+            "name": "Marathon_T-Shirt",
+            "vendor": "VendorX",
+            "product_image": "uploads/Marathon_T-Shirt.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality Marathon_T-Shirt",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 31,
+        "fields": {
+            "category": 3,
+            "name": "Mobile",
+            "vendor": "VendorX",
+            "product_image": "uploads/mobile1.jpg",
+            "quantity": 10,
+            "original_price": 20000,
+            "selling_price": 25000,
+            "description": "High quality Mobile",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 32,
+        "fields": {
+            "category": 4,
+            "name": "N_Shoe",
+            "vendor": "VendorX",
+            "product_image": "uploads/N_Shoe.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality N_Shoe",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 33,
+        "fields": {
+            "category": 4,
+            "name": "Nike_E-Series",
+            "vendor": "VendorX",
+            "product_image": "uploads/Nike_E-Series.jpg",
+            "quantity": 10,
+            "original_price": 1200,
+            "selling_price": 1500,
+            "description": "High quality Nike_E-Series",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 34,
+        "fields": {
+            "category": 4,
+            "name": "Nike_Flex_Run11",
+            "vendor": "VendorX",
+            "product_image": "uploads/Nike_Flex_Run11.jpg",
+            "quantity": 10,
+            "original_price": 1000,
+            "selling_price": 1300,
+            "description": "High quality Nike_Flex_Run11",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 35,
+        "fields": {
+            "category": 4,
+            "name": "Nike_Revolution",
+            "vendor": "VendorX",
+            "product_image": "uploads/Nike_Revolution.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality Nike_Revolution",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 36,
+        "fields": {
+            "category": 3,
+            "name": "Oppo_A16k",
+            "vendor": "VendorX",
+            "product_image": "uploads/Oppo_A16k.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality Oppo_A16k",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 37,
+        "fields": {
+            "category": 3,
+            "name": "Oppo",
+            "vendor": "VendorX",
+            "product_image": "uploads/Oppo.jpg",
+            "quantity": 10,
+            "original_price": 21000,
+            "selling_price": 25000,
+            "description": "High quality Oppo",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 38,
+        "fields": {
+            "category": 3,
+            "name": "Poco_X4",
+            "vendor": "VendorX",
+            "product_image": "uploads/Poco_X4.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality Poco_X4",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 39,
+        "fields": {
+            "category": 4,
+            "name": "Puma_Badmiton",
+            "vendor": "VendorX",
+            "product_image": "uploads/Puma_Badmiton.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality Puma_Badmiton",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 40,
+        "fields": {
+            "category": 4,
+            "name": "Puma_Black",
+            "vendor": "VendorX",
+            "product_image": "uploads/Puma_Black.jpg",
+            "quantity": 10,
+            "original_price": 2100,
+            "selling_price": 3000,
+            "description": "High quality Puma_Black",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 41,
+        "fields": {
+            "category": 3,
+            "name": "Redmi_12",
+            "vendor": "VendorX",
+            "product_image": "uploads/Redmi_12.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality Redmi_12",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 42,
+        "fields": {
+            "category": 3,
+            "name": "Redmi_Note_12",
+            "vendor": "VendorX",
+            "product_image": "uploads/Redmi_Note_12.jpg",
+            "quantity": 10,
+            "original_price": 25000,
+            "selling_price": 28000,
+            "description": "High quality Redmi_Note_12",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 43,
+        "fields": {
+            "category": 1,
+            "name": "Spiritual_T-Shirt",
+            "vendor": "VendorX",
+            "product_image": "uploads/Spiritual_T-Shirt.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality Spiritual_T-Shirt",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 44,
+        "fields": {
+            "category": 1,
+            "name": "tshirt",
+            "vendor": "VendorX",
+            "product_image": "uploads/tshirt.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality tshirt",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 45,
+        "fields": {
+            "category": 1,
+            "name": "Vibes_T-Shirt",
+            "vendor": "VendorX",
+            "product_image": "uploads/Vibes_T-Shirt.jpg",
+            "quantity": 10,
+            "original_price": 1300,
+            "selling_price": 1500,
+            "description": "High quality Vibes_T-Shirt",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 46,
+        "fields": {
+            "category": 1,
+            "name": "White_Shirt",
+            "vendor": "VendorX",
+            "product_image": "uploads/White_Shirt.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality White_Shirt",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 47,
+        "fields": {
+            "category": 1,
+            "name": "White_Shirt",
+            "vendor": "VendorX",
+            "product_image": "uploads/White_Shirt2.jpg",
+            "quantity": 10,
+            "original_price": 1100,
+            "selling_price": 1500,
+            "description": "High quality White_Shirt",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 48,
+        "fields": {
+            "category": 4,
+            "name": "White_Shoe",
+            "vendor": "VendorX",
+            "product_image": "uploads/White_Shoe.jpg",
+            "quantity": 10,
+            "original_price": 5000,
+            "selling_price": 6000,
+            "description": "High quality White_Shoe",
+            "status": false,
+            "trending": false
+        }
+    },
+    {
+        "model": "eshop.products",
+        "pk": 49,
+        "fields": {
+            "category": 1,
+            "name": "Yellow_Shirt",
+            "vendor": "VendorX",
+            "product_image": "uploads/Yellow_Shirt.jpg",
+            "quantity": 10,
+            "original_price": 1500,
+            "selling_price": 2000,
+            "description": "High quality Yellow_Shirt",
+            "status": false,
+            "trending": false
+        }
+    }
+
+]

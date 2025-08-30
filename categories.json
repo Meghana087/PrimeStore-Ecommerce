@@ -1,0 +1,47 @@
+[
+    {
+        "model": "eshop.category",
+        "pk": 1,
+        "fields": {
+            "name": "Shirts",
+            "image": "uploads/Black_Shirt.jpg",
+            "description": "All types of shirts",
+            "status": false,
+            "trending": true
+            
+        }
+    },
+    {
+        "model": "eshop.category",
+        "pk": 2,
+        "fields": {
+            "name": "Laptops",
+            "image": "uploads/Laptop.jpg",
+            "description": "All brands of laptops",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.category",
+        "pk": 3,
+        "fields": {
+            "name": "Mobiles",
+            "image": "uploads/mobile1.jpg",
+            "description": "Smartphones collection",
+            "status": false,
+            "trending": true
+        }
+    },
+    {
+        "model": "eshop.category",
+        "pk": 4,
+        "fields": {
+            "name": "Shoes",
+            "image": "uploads/N_Shoe.jpg",
+            "description": "Trending shoes",
+            "status": false,
+            "trending": true
+        }
+    }
+]
