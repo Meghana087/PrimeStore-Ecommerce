@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQL_DATABASE'),  # Railway database name
+        'NAME': os.environ.get('MYSQL_DATABASE','railway'),  # Railway database name
         'USER': 'root',                            # or your DB user
-        'PASSWORD': os.environ.get('MYSQL_ROOT_PASSWORD'),
+        'PASSWORD': os.environ.get('MYSQL_ROOT_PASSWORD','DyLvtwHKYZCWaireVmXhLRwMqJKZCUWz'),
         'HOST': os.environ.get('MYSQL_HOST', 'mysql.railway.internal'),  # Railway host
         'PORT': os.environ.get('MYSQL_PORT', '3306'),
     }
