@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 import dj_database_url
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('mysql://root:DyLvtwHKYZCWaireVmXhLRwMqJKZCUWz@mysql.railway.internal:3306/railway'))
+    'default': dj_database_url.parse(os.environ.get('MYSQL_URL'))
 }
 
 # Password validation
