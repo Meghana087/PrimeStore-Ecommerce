@@ -4,3 +4,4 @@ gunicorn
 whitenoise
 Pillow
 django-jazzmin
+dj-database-url
