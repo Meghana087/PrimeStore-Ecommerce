@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-w-339%u)_=yl3lff9c*t2i3h@p5^s(#j&#t@n8dpqqkk3aui08
 DEBUG = True
 
 # ALLOWED_HOSTS = ['primestore-ecommerce-production-acb5.up.railway.app']
-ALLOWED_HOSTS=['*']
+# ALLOWED_HOSTS=['*']
+ALLOWED_HOSTS=['primestore-ecommerce.up.railway.app']
 
 # Application definition
 
