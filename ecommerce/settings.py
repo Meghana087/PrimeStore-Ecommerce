@@ -77,16 +77,28 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': os.environ.get('MYSQL_DATABASE','railway'),  # Railway database name
+#         'USER': 'root',                            # or your DB user
+#         'PASSWORD': os.environ.get('MYSQL_ROOT_PASSWORD','DyLvtwHKYZCWaireVmXhLRwMqJKZCUWz'),
+#         'HOST': os.environ.get('MYSQL_HOST', 'mysql.railway.internal'),  # Railway host
+#         'PORT': os.environ.get('MYSQL_PORT', '3306'),
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQL_DATABASE','railway'),  # Railway database name
-        'USER': 'root',                            # or your DB user
-        'PASSWORD': os.environ.get('MYSQL_ROOT_PASSWORD','DyLvtwHKYZCWaireVmXhLRwMqJKZCUWz'),
-        'HOST': os.environ.get('MYSQL_HOST', 'mysql.railway.internal'),  # Railway host
-        'PORT': os.environ.get('MYSQL_PORT', '3306'),
+        'NAME': 'railway',  # database name
+        'USER': 'root',     # username
+        'PASSWORD': 'DyLvtwHKYZCWaireVmXhLRwMqJKZCUWz',
+        'HOST': 'nozomi.proxy.rlwy.net',
+        'PORT': '21560',
     }
 }
+
 
 
 
