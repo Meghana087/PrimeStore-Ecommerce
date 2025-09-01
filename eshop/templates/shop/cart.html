@@ -2,6 +2,7 @@
 {% block title %}
 Cart | PrimeStore
 {% endblock title %}
+
 {% block content %}
 <section class="bg-light py-4 my-5" style="min-height:600px;">
   <div class="container">
@@ -33,7 +34,7 @@ Cart | PrimeStore
               <td class="text-truncate" style="max-width:150px;">{{item.product.name}}</td>
               <td>₹{{item.product.selling_price|stringformat:'d'}}</td>
               <td>{{item.product_qty}}</td>
-              <td class="amt">₹{{item.total_cost|stringformat:'d'}}</td>
+              <td class="item-amt">₹{{item.total_cost|stringformat:'d'}}</td>
               <td>
                 <a href="{% url 'remove_cart' item.id %}" onclick="return confirm('Are you sure to remove?')" class="btn btn-danger btn-sm">
                   <i class="fa fa-trash"></i>
@@ -66,7 +67,7 @@ Cart | PrimeStore
             </div>
             <p class="mb-1"><b>Unit:</b> ₹{{item.product.selling_price|stringformat:'d'}}</p>
             <p class="mb-1"><b>Quantity:</b> {{item.product_qty}}</p>
-            <p class="mb-1 amt">₹{{item.total_cost|stringformat:'d'}}</p>
+            <p class="mb-1 item-amt">₹{{item.total_cost|stringformat:'d'}}</p>
             <div class="d-flex justify-content-between mt-2">
               <a href="{% url 'remove_cart' item.id %}" onclick="return confirm('Are you sure to remove?')" class="btn btn-danger btn-sm">
                 <i class="fa fa-trash"></i> Remove
@@ -88,24 +89,31 @@ Cart | PrimeStore
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
 <script>
 function calcTotal() {
-  const nodes = document.querySelectorAll('.amt');
-  const arr = Array.from(nodes);
-  const res = arr.reduce((acc, curr) => {
-      return acc += Number(curr.textContent.replace('₹','').trim())
-  }, 0);
+  // Only sum visible cart item amounts
+  const nodes = document.querySelectorAll('.item-amt');
+  let total = 0;
 
-  let netDesktop = document.getElementById("net-desktop");
-  let netMobile = document.getElementById("net-mobile");
+  nodes.forEach(node => {
+      if (node.offsetParent !== null) { // only visible elements
+          total += Number(node.textContent.replace('₹','').trim());
+      }
+  });
 
-  if (netDesktop) netDesktop.innerHTML = "₹ " + res;
-  if (netMobile) netMobile.innerHTML = "₹ " + res;
+  const netDesktop = document.getElementById("net-desktop");
+  const netMobile = document.getElementById("net-mobile");
+
+  if (netDesktop) netDesktop.textContent = "₹ " + total;
+  if (netMobile) netMobile.textContent = "₹ " + total;
 }
+
 calcTotal();
 </script>
+
 {% endblock content %}
