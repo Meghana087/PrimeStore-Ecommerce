@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,4 +15,80 @@
     </form>
 </div>
 </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut | PrimeStore</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* Limit the height of textarea fields like address */
+        textarea {
+            max-height: 120px; /* reduce height */
+            resize: vertical;  /* user can still resize if needed */
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.7rem;
+            }
+            button.btn-lg {
+                font-size: 1rem;
+                padding: 10px;
+            }
+            textarea {
+                max-height: 80px;
+            }
+            body{
+                overflow-x: hidden;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+            button.btn-lg {
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+            textarea {
+                max-height: 80px;
+            }
+            body{
+                overflow-x: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container py-5">
+    <h2 class="mb-4 text-center">Checkout</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+
+                <div class="d-grid mt-4 mb-4">
+                    <button type="submit" class="btn btn-success btn-lg">Place Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
+

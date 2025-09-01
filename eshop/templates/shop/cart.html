@@ -4,64 +4,108 @@ Cart | PrimeStore
 {% endblock title %}
 {% block content %}
 <section class="bg-light py-4 my-5" style="min-height:600px;">
-<div class="container">
+  <div class="container">
     <div class="row">
-    <div class="col-12">
-        <h4 class="mb-3">Cart  Items</h4>
+      <div class="col-12">
+        <h4 class="mb-3">Cart Items</h4>
         <hr style="border-color:#b8bfc2;">
-    </div>
-    
-    <table>
-        <tr>
-            <th>Image</th>
-            <th>Product Name</th>
-            <th>Unit</th>
-            <th>Quantity</th>
-            <th>Amount</th>
-            <th>Remove</th>
-        </tr>
-        
+      </div>
 
-        {% for item in cart %}
-        <tr>
-            <td><img src="{{item.product.product_image.url}}" height="75px" alt="{{item.product.name}}"></td>
-            <td>{{item.product.name}}</td>
-            <td>{{item.product.selling_price | stringformat:'d'}}</td>
-            <td>{{item.product_qty}}</td>
-            <td class="amt">{{item.total_cost | stringformat:'d'}}</td>
-            <td><a href="{% url 'remove_cart' item.id %}"  onclick="return confirm('Are you sure? to Remove')"  class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Remove</a></td>
-        </tr>
-        {% endfor %}
-        <tr>
-            <td></td>
-            <td></td>
-            <td colspan="2"><b>Total Amount</b></td>
-            <th id="net">0</th>
-            <!-- <td><button class="btn btn-primary btn-sm">
-            <i class="fa fa-check-circle"></i> Check Out
-            </button></td>
-            -->
-            <td>
-                <a href="{% url 'checkout' %}" class="btn btn-primary btn-sm">
-                <i class="fa fa-check-circle"></i> Check Out
+      <!-- Desktop / Laptop View (Table) -->
+      <div class="d-none d-md-block table-responsive">
+        <table class="table table-bordered align-middle text-center">
+          <thead class="table-light">
+            <tr>
+              <th>Image</th>
+              <th>Product Name</th>
+              <th>Unit</th>
+              <th>Quantity</th>
+              <th>Amount</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in cart %}
+            <tr>
+              <td>
+                <img src="{{item.product.product_image.url}}" class="img-fluid rounded" style="max-height:70px;" alt="{{item.product.name}}">
+              </td>
+              <td class="text-truncate" style="max-width:150px;">{{item.product.name}}</td>
+              <td>₹{{item.product.selling_price|stringformat:'d'}}</td>
+              <td>{{item.product_qty}}</td>
+              <td class="amt">₹{{item.total_cost|stringformat:'d'}}</td>
+              <td>
+                <a href="{% url 'remove_cart' item.id %}" onclick="return confirm('Are you sure to remove?')" class="btn btn-danger btn-sm">
+                  <i class="fa fa-trash"></i>
                 </a>
+              </td>
+            </tr>
+            {% endfor %}
+            <tr>
+              <td colspan="3"></td>
+              <td><b>Total Amount</b></td>
+              <th id="net-desktop">0</th>
+              <td>
+                <a href="{% url 'checkout' %}" class="btn btn-primary btn-sm">
+                  <i class="fa fa-check-circle"></i> Check Out
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-            </td>
-        </tr>
-        
-    </table>
-    
+      <!-- Mobile / Tablet View (Cards) -->
+      <div class="d-block d-md-none">
+        {% for item in cart %}
+        <div class="card mb-3 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex align-items-center mb-2">
+              <img src="{{item.product.product_image.url}}" class="img-fluid rounded me-2" style="width:70px; height:auto;" alt="{{item.product.name}}">
+              <h6 class="mb-0">{{item.product.name}}</h6>
+            </div>
+            <p class="mb-1"><b>Unit:</b> ₹{{item.product.selling_price|stringformat:'d'}}</p>
+            <p class="mb-1"><b>Quantity:</b> {{item.product_qty}}</p>
+            <p class="mb-1 amt">₹{{item.total_cost|stringformat:'d'}}</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="{% url 'remove_cart' item.id %}" onclick="return confirm('Are you sure to remove?')" class="btn btn-danger btn-sm">
+                <i class="fa fa-trash"></i> Remove
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        <div class="card shadow-sm">
+          <div class="card-body d-flex justify-content-between">
+            <strong>Total Amount:</strong>
+            <span id="net-mobile">0</span>
+          </div>
+          <div class="card-footer text-end">
+            <a href="{% url 'checkout' %}" class="btn btn-primary btn-sm">
+              <i class="fa fa-check-circle"></i> Check Out
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
+  </div>
 </section>
 
 <script>
-const nodes = document.querySelectorAll('.amt');
-const arr = Array.from(nodes);
-const res = arr.reduce((acc, curr) => {
-    return acc += Number(curr.textContent)
-}, 0);
-document.getElementById("net").innerHTML="Rs : "+res;
+function calcTotal() {
+  const nodes = document.querySelectorAll('.amt');
+  const arr = Array.from(nodes);
+  const res = arr.reduce((acc, curr) => {
+      return acc += Number(curr.textContent.replace('₹','').trim())
+  }, 0);
 
+  let netDesktop = document.getElementById("net-desktop");
+  let netMobile = document.getElementById("net-mobile");
+
+  if (netDesktop) netDesktop.innerHTML = "₹ " + res;
+  if (netMobile) netMobile.innerHTML = "₹ " + res;
+}
+calcTotal();
 </script>
 {% endblock content %}
