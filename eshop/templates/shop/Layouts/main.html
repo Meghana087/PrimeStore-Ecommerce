@@ -30,17 +30,15 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
   </head>
-  <body>
+  <body style="display:flex; flex-direction:column; min-height:100vh;">
     {% include 'shop/inc/navbar.html' %}
 
-    {% block content %}
-    {% endblock content %}
-
-    {% block scripts %}
-    {% endblock scripts %}
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <main style="flex:1;">
+        {% block content %}{% endblock content %}
+    </main>
 
     {% include 'shop/inc/footer.html' %}
-  </body>
+</body>
+
+
 </html>

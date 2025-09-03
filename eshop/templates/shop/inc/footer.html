@@ -1,4 +1,4 @@
-<div class="footer">
+<!-- <div class="footer">
     <h1>PrimeStore</h1>
     <p>The place where you love shopping</p>
     <div class="footer__icon">
@@ -37,4 +37,57 @@
     margin-top: 0;
     padding-top: 0;
 }
+</style> -->
+
+
+
+<div class="footer">
+    <h1>PrimeStore</h1>
+    <p>The place where you love shopping</p>
+    
+    <div class="footer__icon">
+        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-youtube'></i></a>
+    </div>
+    
+    <p class="subtitle">Copyrights © 2025 PrimeStore</p>
+</div>
+
+<style>
+.footer {
+    background-color: #1D232C;
+    color: #E2E1E1;
+    padding: 20px 15px;
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.footer h1 { font-size: 1.8rem; margin: 10px 0; }
+.footer p { margin: 5px 0; }
+.footer__icon {
+    display: flex; justify-content: center; flex-wrap: wrap;
+    gap: 20px; margin: 15px 0;
+}
+.footer__icon i {
+    font-size: 2rem; color: #fff; padding: 5px; transition: 0.3s;
+}
+.footer__icon i:hover { color: #007bff; }
+.subtitle { font-size: 0.9rem; }
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .footer h1 { font-size: 1.5rem; }
+  .footer__icon i { font-size: 1.7rem; }
+}
+@media screen and (max-width: 600px) {
+  .footer { padding: 15px 10px; }
+  .footer h1 { font-size: 1.2rem; }
+  .footer p { font-size: 0.9rem; }
+  .footer__icon { gap: 15px; }
+  .footer__icon i { font-size: 1.5rem; }
+  .subtitle { font-size: 0.8rem; }
+}
 </style>
+
