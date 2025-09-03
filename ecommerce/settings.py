@@ -111,6 +111,9 @@ DATABASES = {
     }
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://primestore-ecommerce.up.railway.app",
+]
 
 
 
